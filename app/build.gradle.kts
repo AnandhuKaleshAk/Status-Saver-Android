@@ -7,6 +7,7 @@ android {
     namespace = "com.status.saver"
     compileSdk = 34
 
+
     defaultConfig {
         applicationId = "com.status.saver"
         minSdk = 24
@@ -25,6 +26,10 @@ android {
                 "proguard-rules.pro"
             )
         }
+    }
+
+    buildFeatures{
+        dataBinding=true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
